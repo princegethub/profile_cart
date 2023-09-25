@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600display=swap');
+sfs
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    background-color: #f4f4f4;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.image{
+    position: relative;
+    height: 120px;
+    width: 120px ;
+    background-color: #4070f4;
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+.image .profile-image{
+    height: 115px;
+    width: 115px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+    background-color: #4070f4;
+}
+.profile-card .txt-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+.txt-data .name{
+    font-size: 24px;
+    font-weight: 500;
+}
+.txt-data .job{
+    font-size: 15px;
+    font-weight: 400;
+ 
+}
+.profile-card .media-button{
+    display: flex;
+   
+    align-items: center;
+    margin-top: 10px;
+}
+.media-button .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    height: 34px;
+    width: 34px;
+    background-color: #0c49f2;
+    border-radius: 50%;
+    margin: 0 8px;
+    text-decoration: none;
+
+}
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.buttons .button{
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
+    padding: 8px 24px;
+    cursor: pointer;
+    background-color: #4070f4;
+    transition: all 0.3s ease;
+}
+.buttons .button:hover
+{
+    background-color: #0e4bf1;
+}
+.profile-card .anytics
+{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+
+}
+.anytics .dta{
+    display: flex;
+  
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.anytics .dta i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.dta:last-child
+{
+    border-right: none;
+}
